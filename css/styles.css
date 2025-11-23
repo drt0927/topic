@@ -484,3 +484,55 @@ body {
     margin-left: 0;
   }
 }
+
+/* ========== 애드센스 컨테이너 ========== */
+.ad-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-header {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.ad-content-bottom {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.ad-footer {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* 애드센스 플레이스홀더 (개발/테스트용) */
+.ad-placeholder {
+  background: rgba(71, 85, 105, 0.2);
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  min-height: 100px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .ad-container {
+    padding: 0 1rem;
+  }
+  
+  .ad-placeholder {
+    min-width: 250px;
+    min-height: 80px;
+  }
+}
