@@ -25,7 +25,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://drt0927.github.io/topic/posts/2025-11-26-내일-날씨.html</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://drt0927.github.io/topic/posts/2025-11-26-두나무.html</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drt0927.github.io/topic/posts/2025-11-26-서민주.html</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -38,6 +50,12 @@
   </url>
   <url>
     <loc>https://drt0927.github.io/topic/posts/2025-11-26-이영하.html</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drt0927.github.io/topic/posts/2025-11-26-지진.html</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
