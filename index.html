@@ -15,10 +15,99 @@
 
     <title>Trending Topics Daily</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <style>
+        body {
+            background-color: #008080;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Pixelated MS Sans Serif', Arial;
+        }
+
+        .window {
+            width: 800px;
+            max-width: 100%;
+        }
+
+        /* Post Grid Styles for Windows 98 */
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .post-card {
+            background: silver;
+            box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post-rank {
+            background: navy;
+            color: white;
+            display: inline-block;
+            padding: 2px 6px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            align-self: flex-start;
+        }
+
+        .post-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border: 2px inset white;
+            margin-bottom: 10px;
+        }
+
+        .post-title {
+            margin: 5px 0;
+        }
+
+        .post-title a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .post-title a:hover {
+            color: navy;
+            text-decoration: underline;
+        }
+
+        .post-date {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .post-description {
+            font-size: 0.95em;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            flex-grow: 1;
+        }
+
+        .read-more {
+            text-align: right;
+            color: navy;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-top: auto;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -50,27 +139,36 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PDVVMQG" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header class="header">
-        <nav class="nav-container">
-            <h1 class="logo">📊 Trending Topics Daily</h1>
-            <p class="tagline">매일 업데이트되는 한국 트렌드 분석</p>
-        </nav>
-    </header>
 
-    <main class="main-container">
-        <section class="hero-section">
-            <h2 class="hero-title">오늘의 트렌딩 토픽</h2>
-            <p class="hero-description">AI가 분석한 한국 인기 주제 Top 5</p>
-        </section>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">📊 Trending Topics Daily - 2025</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h1 style="margin: 0; font-size: 24px;">Trending Topics Daily</h1>
+                <p style="margin-top: 5px;">매일 업데이트되는 한국 트렌드 분석</p>
+            </div>
 
-        <div class="posts-container">
-            
+            <section class="hero-section"
+                style="margin-bottom: 20px; border: 2px solid white; padding: 10px; background: white;">
+                <h2 style="margin-top: 0;">오늘의 트렌딩 토픽</h2>
+                <p>AI가 분석한 한국 인기 주제 Top 5</p>
+            </section>
+
+            <div class="posts-container">
+                
     <div class="latest-posts-section">
       <h3 class="section-title">🔥 최신 트렌드</h3>
       <div class="posts-grid">
     
         <article class="post-card">
-          <div class="post-rank">#0</div>
+          <div class="post-rank">#1</div>
           
           <div class="post-content">
             <h2 class="post-title">
@@ -88,7 +186,61 @@
         </article>
       
         <article class="post-card">
-          <div class="post-rank">#0</div>
+          <div class="post-rank">#2</div>
+          
+          <div class="post-content">
+            <h2 class="post-title">
+              <a href="posts/2025-12-06-김유정.html">김유정 | Trending Topics Daily</a>
+            </h2>
+            <time class="post-date" datetime="2025-12-06">2025년 12월 6일</time>
+            <p class="post-description">현재 김유정은 최근 종영한 드라마 **&amp;#039;친애하는 X&amp;#039;**와 관련하여 대중의 뜨거운 관심을 받고 있습니다. 드라마의 충격적인 결말과 더불어 그녀의 압도적인 연기력에 대한 호평이 쏟아지는 상황입니다. 특히 동료 배우 김영대의 인터뷰를 통해 극 중 호흡을 맞춘 김도훈과의 열애설이 다시금 언급되면서, 작품의 화제성이 종영 후에도 지속적으로 상승하고 있는 추세입니다.</p>
+            
+              <div class="post-keywords">
+                <span class="keyword">김유정</span>
+              </div>
+            
+            <a href="posts/2025-12-06-김유정.html" class="read-more">자세히 읽기 →</a>
+          </div>
+        </article>
+      
+        <article class="post-card">
+          <div class="post-rank">#3</div>
+          
+          <div class="post-content">
+            <h2 class="post-title">
+              <a href="posts/2025-12-06-로또1201회.html">로또1201회 | Trending Topics Daily</a>
+            </h2>
+            <time class="post-date" datetime="2025-12-06">2025년 12월 6일</time>
+            <p class="post-description">2025년 12월 6일 진행된 동행복권 제1201회 로또 추첨 결과가 발표되며 대중의 이목이 쏠리고 있습니다. 이번 회차에서는 **1등 당첨자가 19명**이나 배출되었으며, 이들은 각각 약 **14억 1,455만 원**의 당첨금을 수령하게 됩니다. 많은 당첨자 수로 인해 1인당 수령액이 초대박 수준(수십억 원)에는 미치지 못했으나, 전국적으로 고른 당첨자 분포와 자동 선택의 강세가 두드러지며 화제가 되고 있습니다. 경기 불황 속 &amp;#039;인생 역...</p>
+            
+              <div class="post-keywords">
+                <span class="keyword">로또1201회</span>
+              </div>
+            
+            <a href="posts/2025-12-06-로또1201회.html" class="read-more">자세히 읽기 →</a>
+          </div>
+        </article>
+      
+        <article class="post-card">
+          <div class="post-rank">#4</div>
+          
+          <div class="post-content">
+            <h2 class="post-title">
+              <a href="posts/2025-12-06-반효정.html">반효정 | Trending Topics Daily</a>
+            </h2>
+            <time class="post-date" datetime="2025-12-06">2025년 12월 6일</time>
+            <p class="post-description">2025년 12월 6일 방영된 KBS 드라마 &amp;#039;화려한 날들&amp;#039;에서 배우 반효정(옥례 역)이 시니어 모델로 데뷔하며 큰 화제를 모으고 있습니다. 단순히 드라마 속 에피소드를 넘어, 고령화 사회 속 새로운 도전을 꿈꾸는 &amp;#039;액티브 시니어&amp;#039;의 표상을 보여주었기 때문입니다. 옥례가 런웨이에 서고 생애 첫 소득을 올리는 장면은 전 세대에 걸쳐 깊은 울림을 주며 검색량이 급증하고 있습니다. (198자)</p>
+            
+              <div class="post-keywords">
+                <span class="keyword">반효정</span>
+              </div>
+            
+            <a href="posts/2025-12-06-반효정.html" class="read-more">자세히 읽기 →</a>
+          </div>
+        </article>
+      
+        <article class="post-card">
+          <div class="post-rank">#5</div>
           
           <div class="post-content">
             <h2 class="post-title">
@@ -105,474 +257,31 @@
           </div>
         </article>
       
-        <article class="post-card">
-          <div class="post-rank">#0</div>
-          
-          <div class="post-content">
-            <h2 class="post-title">
-              <a href="posts/2025-12-06-쯔양.html">쯔양 | Trending Topics Daily</a>
-            </h2>
-            <time class="post-date" datetime="2025-12-06">2025년 12월 6일</time>
-            <p class="post-description">최근 인기 먹방 크리에이터 쯔양이 MBC 예능 프로그램 ‘어디로 튈지 몰라(이하 어튈라)’에 출연하여 변함없는 대식가의 면모를 과시하며 화제의 중심에 섰습니다. 경북 문경을 배경으로 한 이번 방송에서 쯔양은 한우 특수부위를 무려 1.5kg이나 섭취하고도 “아직 1% 정도 찼다”는 충격적인 발언을 남겨 시청자와 출연진 모두를 놀라게 했습니다. 이는 단순한 먹방을 넘어 방송 콘텐츠의 핵심 재미 요소로 작용하며 검색량을 급증시키고 있습니다.</p>
-            
-              <div class="post-keywords">
-                <span class="keyword"></span>
-              </div>
-            
-            <a href="posts/2025-12-06-쯔양.html" class="read-more">자세히 읽기 →</a>
-          </div>
-        </article>
-      
-        <article class="post-card">
-          <div class="post-rank">#0</div>
-          
-          <div class="post-content">
-            <h2 class="post-title">
-              <a href="posts/2025-12-06-창원-lg-대-울산-현대모비스.html">창원 lg 대 울산 현대모비스 | Trending Topics Daily</a>
-            </h2>
-            <time class="post-date" datetime="2025-12-06">2025년 12월 6일</time>
-            <p class="post-description">2025년 12월 6일 펼쳐진 프로농구(KBL) 창원 LG와 울산 현대모비스의 경기가 스포츠 팬들의 뜨거운 관심을 받고 있습니다. 이날 경기에서 창원 LG는 현대모비스를 상대로 완승을 거두며 리그 단독 선두 자리를 굳건히 지켰습니다. 특히 LG의 핵심 자원인 칼 타마요 선수의 맹활약과 패배 직후 현대모비스 양동근 감독의 자책 섞인 인터뷰가 화제가 되며, 상위권 순위 경쟁의 중요한 분수령이 된 이 경기에 대한 검색량이 급증하고 있습니다.</p>
-            
-              <div class="post-keywords">
-                <span class="keyword">현대모비스</span>
-              </div>
-            
-            <a href="posts/2025-12-06-창원-lg-대-울산-현대모비스.html" class="read-more">자세히 읽기 →</a>
-          </div>
-        </article>
-      
-        <article class="post-card">
-          <div class="post-rank">#0</div>
-          
-          <div class="post-content">
-            <h2 class="post-title">
-              <a href="posts/2025-12-06-케스파컵-중계.html">케스파컵 중계 | Trending Topics Daily</a>
-            </h2>
-            <time class="post-date" datetime="2025-12-06">2025년 12월 6일</time>
-            <p class="post-description">2025년 12월, e스포츠 팬들의 이목이 &amp;#039;LoL KeSPA Cup(케스파컵)&amp;#039;에 집중되고 있습니다. 이번 대회가 폭발적인 검색량을 기록하며 화제가 된 이유는 크게 두 가지입니다. 첫째, 글로벌 OTT 플랫폼인 **디즈니+(Disney+)**가 e스포츠 생중계에 본격적으로 뛰어들며 중계 플랫폼의 지형 변화를 예고했기 때문입니다. 둘째, 개막전에서 LCK의 강호 **젠지(Gen.G)**가 북미의 **클라우드9(C9)**을 상대로 예상 밖의...</p>
-            
-              <div class="post-keywords">
-                <span class="keyword">케스파컵</span>
-              </div>
-            
-            <a href="posts/2025-12-06-케스파컵-중계.html" class="read-more">자세히 읽기 →</a>
-          </div>
-        </article>
-      
       </div>
     </div>
     
-    <div class="archive-posts-section">
-      <h3 class="section-title">📚 이전 게시글</h3>
-      <ul class="archive-list">
-    
-        <li class="archive-item">
-          <a href="posts/2025-12-05-쿠팡이츠.html" class="archive-link">
-            <span class="archive-title">쿠팡이츠 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 5일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-05-클라우드.html" class="archive-link">
-            <span class="archive-title">클라우드 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 5일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-05-퍼플렉시티.html" class="archive-link">
-            <span class="archive-title">퍼플렉시티 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 5일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-05-피넛.html" class="archive-link">
-            <span class="archive-title">피넛 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 5일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-02-박대준.html" class="archive-link">
-            <span class="archive-title">박대준 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 2일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-02-변희재.html" class="archive-link">
-            <span class="archive-title">변희재 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 2일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-02-트라이폴드.html" class="archive-link">
-            <span class="archive-title">트라이폴드 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 2일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-02-한국장학재단.html" class="archive-link">
-            <span class="archive-title">한국장학재단 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 2일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-01-개인통관부호.html" class="archive-link">
-            <span class="archive-title">개인통관부호 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 1일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-01-국민체력100.html" class="archive-link">
-            <span class="archive-title">국민체력100 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 1일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-01-류준열.html" class="archive-link">
-            <span class="archive-title">류준열 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 1일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-12-01-맷-매닝.html" class="archive-link">
-            <span class="archive-title">맷 매닝 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 12월 1일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-30-강원-대-포항.html" class="archive-link">
-            <span class="archive-title">강원 대 포항 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 30일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-30-양준혁.html" class="archive-link">
-            <span class="archive-title">양준혁 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 30일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-30-올데프.html" class="archive-link">
-            <span class="archive-title">올데프 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 30일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-30-전북-대-fc-서울.html" class="archive-link">
-            <span class="archive-title">전북 대 fc 서울 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 30일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-30-주현미.html" class="archive-link">
-            <span class="archive-title">주현미 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 30일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-29-박은빈.html" class="archive-link">
-            <span class="archive-title">박은빈 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 29일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-29-배현진.html" class="archive-link">
-            <span class="archive-title">배현진 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 29일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-29-주토피아-쿠키.html" class="archive-link">
-            <span class="archive-title">주토피아 쿠키 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 29일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-29-쿠팡-개인정보.html" class="archive-link">
-            <span class="archive-title">쿠팡 개인정보 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 29일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-29-하지원.html" class="archive-link">
-            <span class="archive-title">하지원 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 29일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-28-김승연.html" class="archive-link">
-            <span class="archive-title">김승연 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 28일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-28-김종철-교수.html" class="archive-link">
-            <span class="archive-title">김종철 교수 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 28일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-28-노태문.html" class="archive-link">
-            <span class="archive-title">노태문 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 28일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-28-마마-2025.html" class="archive-link">
-            <span class="archive-title">마마 2025 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 28일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-28-하나은행.html" class="archive-link">
-            <span class="archive-title">하나은행 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 28일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-27-명세빈.html" class="archive-link">
-            <span class="archive-title">명세빈 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 27일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-27-손흥민-협박녀.html" class="archive-link">
-            <span class="archive-title">손흥민 협박녀 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 27일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-27-장경태.html" class="archive-link">
-            <span class="archive-title">장경태 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 27일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-27-한림대.html" class="archive-link">
-            <span class="archive-title">한림대 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 27일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-건강보험공단-갑질.html" class="archive-link">
-            <span class="archive-title">건강보험공단 갑질 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-국민연금공단.html" class="archive-link">
-            <span class="archive-title">국민연금공단 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-내일-날씨.html" class="archive-link">
-            <span class="archive-title">내일 날씨 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-두나무.html" class="archive-link">
-            <span class="archive-title">두나무 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-서민주.html" class="archive-link">
-            <span class="archive-title">서민주 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-울산-대-부리람-유나이티드.html" class="archive-link">
-            <span class="archive-title">울산 대 부리람 유나이티드 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-이영하.html" class="archive-link">
-            <span class="archive-title">이영하 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-정승제.html" class="archive-link">
-            <span class="archive-title">정승제 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-지진.html" class="archive-link">
-            <span class="archive-title">지진 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-최형우-삼성.html" class="archive-link">
-            <span class="archive-title">최형우 삼성 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-코스.html" class="archive-link">
-            <span class="archive-title">코스 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-26-홍민규.html" class="archive-link">
-            <span class="archive-title">홍민규 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 26일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-25-강원-대-마치다-젤비아.html" class="archive-link">
-            <span class="archive-title">강원 대 마치다 젤비아 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 25일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-25-상하이-하이강-대-fc-서울.html" class="archive-link">
-            <span class="archive-title">상하이 하이강 대 fc 서울 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 25일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-25-이찬희.html" class="archive-link">
-            <span class="archive-title">이찬희 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 25일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-25-이하상.html" class="archive-link">
-            <span class="archive-title">이하상 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 25일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-25-타노스-코치.html" class="archive-link">
-            <span class="archive-title">타노스 코치 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 25일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-24-김녹완.html" class="archive-link">
-            <span class="archive-title">김녹완 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 24일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-24-변웅전.html" class="archive-link">
-            <span class="archive-title">변웅전 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 24일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-24-우도.html" class="archive-link">
-            <span class="archive-title">우도 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 24일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-23-류혜영.html" class="archive-link">
-            <span class="archive-title">류혜영 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 23일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-23-쯔양.html" class="archive-link">
-            <span class="archive-title">쯔양 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 23일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-23-편승엽.html" class="archive-link">
-            <span class="archive-title">편승엽 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 23일</span>
-          </a>
-        </li>
-      
-        <li class="archive-item">
-          <a href="posts/2025-11-23-한준수.html" class="archive-link">
-            <span class="archive-title">한준수 | Trending Topics Daily</span>
-            <span class="archive-date">2025년 11월 23일</span>
-          </a>
-        </li>
-      
-      </ul>
-    </div>
-    
+            </div>
+
+            <!-- 전체 게시글 보기 버튼 -->
+            <div class="view-all-container" style="text-align: center; margin-top: 20px;">
+                <a href="list.html" class="view-all-button"><button>📚 이전 게시글 보기</button></a>
+            </div>
+
+            <!-- 애드센스: 푸터 위 -->
+            <div class="ad-container ad-footer" style="margin-top: 20px; text-align: center;">
+                <!-- 구글 애드센스 코드를 여기에 삽입하세요 -->
+                <div class="ad-placeholder" style="border: 1px dotted gray; padding: 10px;">AD</div>
+            </div>
+
+            <hr style="margin: 20px 0;">
+
+            <footer class="footer" style="text-align: center;">
+                <p>&copy; 2025 Trending Topics Daily. All rights reserved.</p>
+                <p>Powered by Google Trends & Gemini AI</p>
+                <p class="last-updated">마지막 업데이트: 2025-12-06T13:50:19.630Z</p>
+            </footer>
         </div>
-
-        <!-- 전체 게시글 보기 버튼 -->
-        <div class="view-all-container">
-            <a href="list.html" class="view-all-button">📚 이전 게시글 보기</a>
-        </div>
-    </main>
-
-    <!-- 애드센스: 푸터 위 -->
-    <div class="ad-container ad-footer">
-        <!-- 구글 애드센스 코드를 여기에 삽입하세요 -->
-        <div class="ad-placeholder">AD</div>
     </div>
-
-    <footer class="footer">
-        <p>&copy; 2025 Trending Topics Daily. All rights reserved.</p>
-        <p>Powered by Google Trends & Gemini AI</p>
-        <p class="last-updated">마지막 업데이트: 2025-12-06T10:19:11.875Z</p>
-    </footer>
 </body>
 
 </html>
